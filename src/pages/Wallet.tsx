@@ -8,6 +8,7 @@ import { useCryptoData } from "../contexts/CryptoDataContext";
 import { ArrowUp, ArrowDown, Wallet as WalletIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Progress } from "@/components/ui/progress";
+import { cn } from "@/lib/utils";
 
 const Wallet = () => {
   const { cryptocurrencies, walletAssets } = useCryptoData();
@@ -92,6 +93,13 @@ const Wallet = () => {
 
   const assetAllocations = calculateAllocation();
 
+  // Helper function to get indicator class based on token symbol
+  const getProgressClass = (symbol: string) => {
+    if (symbol === "btc") return "bg-primary";
+    if (symbol === "eth") return "bg-crypto-accent-purple";
+    return "bg-crypto-accent-green";
+  };
+
   return (
     <DashboardLayout>
       <div className="space-y-6">
@@ -137,14 +145,7 @@ const Wallet = () => {
                       </div>
                       <Progress
                         value={allocation.percentage}
-                        className="h-2 bg-gray-800"
-                        indicatorClassName={
-                          allocation.symbol === "btc" 
-                            ? "bg-primary" 
-                            : allocation.symbol === "eth" 
-                              ? "bg-crypto-accent-purple" 
-                              : "bg-crypto-accent-green"
-                        }
+                        className={cn("h-2 bg-gray-800", getProgressClass(allocation.symbol))}
                       />
                     </div>
                   ))}
