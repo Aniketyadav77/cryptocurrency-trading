@@ -80,8 +80,8 @@ A modern, responsive cryptocurrency trading dashboard built with React, TypeScri
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Aniketyadav77/crypto-horizon-dashboard.git
-   cd crypto-horizon-dashboard
+   git clone https://github.com/Aniketyadav77/cryptocurrency-trading.git
+   cd cryptocurrency-trading
    ```
 
 2. **Install dependencies**
