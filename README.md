@@ -96,8 +96,8 @@ A modern, responsive cryptocurrency trading dashboard built with React, TypeScri
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/vishalgir007/cryprocurrency-trading.git
-   cd cryprocurrency-trading
+   git clone https://github.com/Aniketyadav77/cryptocurrency-trading.git
+   cd cryptocurrency-trading
    ```
 
 2. **Install dependencies**
@@ -181,7 +181,7 @@ vercel --prod
 ```
 
 #### Option 3: One-Click Deploy
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vishalgir007/cryprocurrency-trading)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Aniketyadav77/cryptocurrency-trading)
 
 ### Environment Variables
 For production deployment, make sure to set up the following environment variables in your Vercel dashboard:
