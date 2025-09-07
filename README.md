@@ -10,23 +10,39 @@ A modern, responsive cryptocurrency trading dashboard built with React, TypeScri
 ## ✨ Features
 
 ### 🔐 Authentication & Security
+
+<img width="1915" height="912" alt="image" src="https://github.com/user-attachments/assets/1e32fea2-2def-407e-a8a2-3d2c506db38b" />
+
 - **Secure Login System**: User authentication with protected routes
 - **Session Management**: Persistent user sessions with secure logout
 - **Protected Routes**: Role-based access control for different sections
 
 ### 📊 Dashboard Overview
+
+<img width="1895" height="908" alt="image" src="https://github.com/user-attachments/assets/c7c2fa72-2d29-4a20-8212-2899651993e0" />
+
+
 - **Real-time Market Data**: Live cryptocurrency prices and market metrics
+<img width="1891" height="912" alt="image" src="https://github.com/user-attachments/assets/073735b1-f06e-4c40-a8ed-99e9a82d3971" />
+
+- 
 - **Portfolio Analytics**: Comprehensive portfolio performance tracking
 - **Interactive Charts**: Advanced charting with multiple timeframes
 - **Market Trends**: Visual representation of market movements
 
 ### 💹 Trading Platform
+
+<img width="1888" height="915" alt="image" src="https://github.com/user-attachments/assets/87bb2724-570b-4001-8be0-2856614581b7" />
+
 - **Live Trading Interface**: Buy/sell cryptocurrencies with real-time pricing
 - **Order Management**: Place, track, and manage trading orders
 - **Market Analysis**: Technical analysis tools and indicators
 - **Price Alerts**: Customizable price notifications
 
 ### 💼 Wallet Management
+
+<img width="1889" height="922" alt="image" src="https://github.com/user-attachments/assets/b5c94c63-b65d-4726-9d3f-1cb0b4528af2" />
+
 - **Multi-Currency Support**: Manage multiple cryptocurrency wallets
 - **Transaction History**: Detailed transaction logs and analytics
 - **Balance Tracking**: Real-time balance updates across all holdings
