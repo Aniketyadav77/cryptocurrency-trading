@@ -131,8 +131,55 @@ crypto-horizon-dash/
 │   ├── App.tsx           # Main application component
 │   └── main.tsx          # Application entry point
 ├── package.json          # Project dependencies and scripts
+├── vercel.json           # Vercel deployment configuration
 └── README.md            # Project documentation
 ```
+
+## 🚀 Deployment
+
+### Deploy to Vercel
+
+This project is optimized for deployment on Vercel. Follow these steps:
+
+#### Option 1: Deploy via Vercel Dashboard
+1. Fork or clone this repository
+2. Go to [Vercel Dashboard](https://vercel.com/dashboard)
+3. Click "New Project"
+4. Import your repository
+5. Vercel will automatically detect it's a Vite project
+6. Click "Deploy"
+
+#### Option 2: Deploy via Vercel CLI
+```bash
+# Install Vercel CLI globally
+npm install -g vercel
+
+# Login to Vercel
+vercel login
+
+# Deploy the project
+vercel
+
+# For production deployment
+vercel --prod
+```
+
+#### Option 3: One-Click Deploy
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vishalgir007/cryprocurrency-trading)
+
+### Environment Variables
+For production deployment, make sure to set up the following environment variables in your Vercel dashboard:
+- `VITE_APP_NAME`: Crypto Horizon Dashboard
+- `VITE_APP_VERSION`: 1.0.0
+- `VITE_NODE_ENV`: production
+
+### Build Optimization
+The project includes several optimizations for production:
+- **Code Splitting**: Automatically splits vendor, UI, and chart libraries
+- **Minification**: Uses Terser for optimal compression
+- **Tree Shaking**: Removes unused code
+- **Gzip Compression**: Enabled by default on Vercel
+- **Source Maps**: Disabled in production for smaller builds
 
 ## 🔧 Available Scripts
 
@@ -141,6 +188,7 @@ crypto-horizon-dash/
 - `npm run build:dev` - Build in development mode
 - `npm run lint` - Run ESLint for code quality checks
 - `npm run preview` - Preview the production build locally
+- `npm run vercel-build` - Optimized build command for Vercel deployment
 
 ## 🌟 Key Features Explained
 
