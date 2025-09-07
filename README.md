@@ -213,5 +213,3 @@ If you have any questions or need help with setup, please:
 - Provide detailed information about your environment and the issue
 
 ---
-
-**Built with ❤️ by [Aniket Yadav](https://github.com/Aniketyadav77)**
