@@ -1,73 +1,201 @@
-# Welcome to your Lovable project
+# 🚀 Crypto Horizon Dashboard
 
-## Project info
+A modern, responsive cryptocurrency trading dashboard built with React, TypeScript, and cutting-edge web technologies. This application provides a comprehensive platform for cryptocurrency market analysis, trading, and portfolio management.
 
-**URL**: https://lovable.dev/projects/1902b217-5f80-490c-977e-eaa94553d5d9
+![Crypto Horizon Dashboard](https://img.shields.io/badge/status-active-brightgreen.svg)
+![React](https://img.shields.io/badge/React-18.3.1-blue.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-blue.svg)
+![Vite](https://img.shields.io/badge/Vite-5.4.1-646CFF.svg)
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+### 🔐 Authentication & Security
+- **Secure Login System**: User authentication with protected routes
+- **Session Management**: Persistent user sessions with secure logout
+- **Protected Routes**: Role-based access control for different sections
 
-**Use Lovable**
+### 📊 Dashboard Overview
+- **Real-time Market Data**: Live cryptocurrency prices and market metrics
+- **Portfolio Analytics**: Comprehensive portfolio performance tracking
+- **Interactive Charts**: Advanced charting with multiple timeframes
+- **Market Trends**: Visual representation of market movements
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1902b217-5f80-490c-977e-eaa94553d5d9) and start prompting.
+### 💹 Trading Platform
+- **Live Trading Interface**: Buy/sell cryptocurrencies with real-time pricing
+- **Order Management**: Place, track, and manage trading orders
+- **Market Analysis**: Technical analysis tools and indicators
+- **Price Alerts**: Customizable price notifications
 
-Changes made via Lovable will be committed automatically to this repo.
+### 💼 Wallet Management
+- **Multi-Currency Support**: Manage multiple cryptocurrency wallets
+- **Transaction History**: Detailed transaction logs and analytics
+- **Balance Tracking**: Real-time balance updates across all holdings
+- **Transfer Management**: Send and receive cryptocurrencies
 
-**Use your preferred IDE**
+### 🏪 Market Analysis
+- **Market Overview**: Comprehensive market data and statistics
+- **Cryptocurrency Rankings**: Top performing coins and market leaders
+- **Price Comparison**: Compare multiple cryptocurrencies
+- **Market Sentiment**: Analysis of market trends and sentiment
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Frontend Framework
+- **React 18.3.1**: Modern React with hooks and concurrent features
+- **TypeScript 5.5.3**: Type-safe development with enhanced IDE support
+- **Vite 5.4.1**: Fast build tool and development server
 
-Follow these steps:
+### UI Components & Styling
+- **shadcn/ui**: Modern, accessible UI component library
+- **Radix UI**: Unstyled, accessible components for complex UI
+- **Tailwind CSS 3.4.11**: Utility-first CSS framework
+- **Lucide React**: Beautiful, customizable icons
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### State Management & Data Fetching
+- **React Context API**: Global state management for auth and crypto data
+- **TanStack Query 5.56.2**: Powerful data synchronization for React
+- **React Hook Form 7.53.0**: Performant forms with easy validation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Routing & Navigation
+- **React Router DOM 6.26.2**: Declarative routing for React applications
+- **Protected Routes**: Authentication-based route protection
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Data Visualization
+- **Recharts 2.12.7**: Composable charting library for React
+- **Interactive Charts**: Real-time data visualization
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Development Tools
+- **ESLint**: Code linting and quality enforcement
+- **TypeScript ESLint**: TypeScript-specific linting rules
+- **Autoprefixer**: Automatic CSS vendor prefixing
+
+## 🚀 Getting Started
+
+### Prerequisites
+- **Node.js** (v16 or higher)
+- **npm** or **yarn** package manager
+- **Git** for version control
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Aniketyadav77/crypto-horizon-dashboard.git
+   cd crypto-horizon-dashboard
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:8080` to view the application
+
+### Build for Production
+
+```bash
+# Build the application
+npm run build
+
+# Preview the production build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+## 📁 Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+crypto-horizon-dash/
+├── public/                 # Static assets
+├── src/
+│   ├── components/        # Reusable UI components
+│   │   ├── ui/           # shadcn/ui components
+│   │   ├── DashboardLayout.tsx
+│   │   └── ProtectedRoute.tsx
+│   ├── contexts/         # React context providers
+│   │   ├── AuthContext.tsx
+│   │   └── CryptoDataContext.tsx
+│   ├── hooks/            # Custom React hooks
+│   ├── lib/              # Utility functions and configurations
+│   ├── pages/            # Application pages/routes
+│   │   ├── Dashboard.tsx
+│   │   ├── Login.tsx
+│   │   ├── Market.tsx
+│   │   ├── Trade.tsx
+│   │   └── Wallet.tsx
+│   ├── App.tsx           # Main application component
+│   └── main.tsx          # Application entry point
+├── package.json          # Project dependencies and scripts
+└── README.md            # Project documentation
+```
 
-**Use GitHub Codespaces**
+## 🔧 Available Scripts
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build the application for production
+- `npm run build:dev` - Build in development mode
+- `npm run lint` - Run ESLint for code quality checks
+- `npm run preview` - Preview the production build locally
 
-## What technologies are used for this project?
+## 🌟 Key Features Explained
 
-This project is built with:
+### Authentication System
+The application includes a robust authentication system with:
+- User login/logout functionality
+- Protected routes that require authentication
+- Session persistence across browser refreshes
+- Secure context-based state management
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Real-time Data Integration
+- Live cryptocurrency price feeds
+- Real-time portfolio updates
+- Market data synchronization
+- Efficient data caching and invalidation
 
-## How can I deploy this project?
+### Responsive Design
+- Mobile-first approach with Tailwind CSS
+- Adaptive layouts for all screen sizes
+- Touch-friendly interface for mobile devices
+- Optimized performance across devices
 
-Simply open [Lovable](https://lovable.dev/projects/1902b217-5f80-490c-977e-eaa94553d5d9) and click on Share -> Publish.
+### Modern Development Practices
+- TypeScript for type safety and better development experience
+- Component-based architecture for maintainability
+- Custom hooks for reusable logic
+- Comprehensive error handling and loading states
 
-## Can I connect a custom domain to my Lovable project?
+## 🤝 Contributing
 
-Yes, you can!
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📄 License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
+- [Radix UI](https://www.radix-ui.com/) for accessible component primitives
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+- [React](https://reactjs.org/) team for the amazing framework
+- [Vite](https://vitejs.dev/) for the blazing fast build tool
+
+## 📞 Support
+
+If you have any questions or need help with setup, please:
+- Open an issue on GitHub
+- Check existing issues for similar problems
+- Provide detailed information about your environment and the issue
+
+---
+
+**Built with ❤️ by [Aniket Yadav](https://github.com/Aniketyadav77)**
