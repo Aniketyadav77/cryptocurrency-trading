@@ -80,8 +80,8 @@ A modern, responsive cryptocurrency trading dashboard built with React, TypeScri
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Aniketyadav77/cryptocurrency-trading.git
-   cd cryptocurrency-trading
+   git clone https://github.com/vishalgir007/cryprocurrency-trading.git
+   cd cryprocurrency-trading
    ```
 
 2. **Install dependencies**
